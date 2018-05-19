@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Bottom Navigation</string>
+
+    <string name="text_profile">Profile</string>
+    <string name="text_people">People</string>
+    <string name="text_forum">Forum</string>
+    <string name="text_chat">Chat</string>
+    <string name="text_search">Search</string>
+
+    <string name="resent_news">J-
+        -
+        -
+        -
+        -
+        -
+
+        -
+        -
+        -
+        -
+        -
+        _J</string>
+    <string name="in_news">O_-
+        -
+        -
+
+        -
+        -
+        -
+        -
+        -
+        -
+        -
+        -
+        -
+
+        O</string>
+
+    <string name="publish_date">()_()-
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    --
+    -
+    </string>
+</resources>

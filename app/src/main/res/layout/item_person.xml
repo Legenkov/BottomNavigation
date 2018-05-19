@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@color/white">
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/btn_item_chat_mute"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/fiasko"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dp" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/btn_item_chat_delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/fiasko" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:cardCornerRadius="5dp"
+            android:id="@+id/cv">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_item_chat_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_item_chat_status_user"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="5dp"
+                        app:backgroundTint="@color/colorAccent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_item_chat_profile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fiasko" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_item_chat_name_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/rl_item_chat_profile"
+                    android:text="HUJ"
+                    android:textColor="@color/messageText"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_item_chat_count_new"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/fiasko">
+
+                    <TextView
+                        android:id="@+id/tv_item_chat_count_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="3"
+                        android:textColor="@color/messageText"
+                        android:textSize="8sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_item_chat_body_last_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_item_chat_name_user"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toRightOf="@+id/rl_item_chat_profile"
+                    android:text="Застывший пластик потрясно.\n — Скажи-ка, дядя, ведь не даром "
+                    android:maxLines="2"
+                    android:maxLength="80"
+                    android:textColor="@color/messageText"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_chat_date_last_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/tv_item_chat_body_last_msg"
+                    android:layout_toRightOf="@+id/rl_item_chat_profile"
+                    android:text="Kkkk"
+                    android:layout_marginLeft="10dp"
+
+                    android:textSize="12sp"
+                    android:textColor="@color/messageText" />
+
+
+                <View
+                    android:id="@+id/v_item_chat_view_new_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorAccent"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>
